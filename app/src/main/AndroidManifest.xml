@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.menukart.menukart">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="allowBackup"
+        tools:ignore="UnusedAttribute">
+        <!--
+            The API key for Google Maps-based APIs is defined as a string resource.
+            (See the file "res/values/google_maps_api.xml").
+            Note that the API key is linked to the encryption key used to sign the APK.
+            You need a different API key for each encryption key, including the release key that is used to
+            sign the APK for publishing.
+            You can define the keys for the debug and release targets in src/debug/ and src/release/.
+       -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".view.setting.manageaddress.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".view.other.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.other.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name=".view.order.menu.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.setting.privacypolicy.PrivacyActivity"
+            android:label="@string/title_activity_privacy_policy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.setting.manageaddress.ManageAddressActivity"
+            android:label="@string/title_activity_manage_address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.setting.SupportActivity"
+            android:label="@string/title_activity_support"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.setting.userprofile.UpdateProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.order.orderlist.OrderDetailsActivity"
+            android:label="@string/title_activity_order_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.foodcart.cart.FoodCartActivity"
+            android:label="@string/title_activity_food_cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.foodcart.signup.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.foodcart.signup.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.foodcart.otpverification.PhoneVerificationActivity"
+            android:label="@string/title_activity_Phone_Verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.foodcart.trackorder.OrderPlacedActivity"
+            android:label="@string/title_activity_order_placed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.foodcart.trackorder.OrderSummaryActivity"
+            android:label="@string/title_activity_order_summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.foodcart.trackorder.TrackOrderActivity"
+            android:label="@string/title_activity_track_order"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

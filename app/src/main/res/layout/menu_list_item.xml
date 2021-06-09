@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    tools:context=".view.other.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_menu_promo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_menu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/iv_menu_promo"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_menu_veg_non_veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_menu_name"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/iv_menu_promo"
+                    android:textSize="@dimen/text_medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_menu_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_menu_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_menu_cost"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_rounded_button"
+                    android:text="@string/btn_add"
+                    android:textColor="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_menu_add_remove_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/tv_menu_cost"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/ic_shape_vertical_rectangle"
+                    android:gravity="center_horizontal"
+                    android:padding="6dp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_menu_remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="8dp"
+                        android:text="-"
+                        android:textSize="@dimen/text_medium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_menu_item_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="#ffe5e5"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:text="1"
+                        android:textSize="@dimen/text_medium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_menu_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:text="+"
+                        android:textSize="@dimen/text_medium" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

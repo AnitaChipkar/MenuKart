@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">MenuKart</string>
+    <string name="loading">Loading</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_activity_settings">Profile</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_privacy_policy">MenuKart Policy</string>
+    <string name="title_activity_manage_address">Manage Address</string>
+    <string name="title_activity_support">Help &amp; Support</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_order_details">Order Details</string>
+    <string name="title_activity_food_cart">Your Food Cart</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_Phone_Verification">Phone Verification</string>
+    <string name="title_activity_order_summary">Order Summary</string>
+    <string name="title_activity_order_placed">Order Placed</string>
+    <string name="title_activity_track_order">Track Your Order</string>
+
+
+    <string name="menu_explore">Explore</string>
+    <string name="menu_orders">My Orders</string>
+    <string name="menu_settings">Settings</string>
+
+    <!--********** Strings for home screen **********-->
+    <string name="food_message">What would you like to eat?</string>
+    <string name="current_location">Location</string>
+    <string name="veg_only">Veg Only</string>
+    <string name="search_hint">Search Restaurant</string>
+
+
+    <string name="dialog_label_ok">OK</string>
+    <string name="error_check_network">Check internet connection</string>
+    <string name="error_invalid_response">Something went wrong,please try again later!</string>
+
+    <!--********** Strings for settings screen **********-->
+    <string name="text_manage_address">Manage Addresses</string>
+    <string name="text_terms_conditions">Terms &amp; Conditions</string>
+    <string name="text_privacy_policy">Privacy Policy</string>
+    <string name="text_cancellation_refund">Cancellation &amp; Refund Policy</string>
+    <string name="text_help_support">Help &amp; Support</string>
+    <string name="text_log_out">Logout</string>
+    <string name="hint_address_title">Title</string>
+    <string name="hint_address">responseSuccess</string>
+    <string name="btn_save_address">Save</string>
+    <string name="text_login_first">Please Login First!</string>
+    <string name="text_ask_for_log_out">Do you want to Logout?</string>
+    <string name="text_log_out_yes">Yes</string>
+    <string name="text_log_out_no">No</string>
+
+    <!--********** Strings for Help & Support screen **********-->
+    <string name="text_help">Need some help?</string>
+    <string name="text_help_call">Feel free to call us on following number</string>
+    <string name="text_contact">8380053000</string>
+    <string name="btn_support">Call Support</string>
+    <string name="text_email_query">You can reach us by sending email with your query</string>
+    <string name="text_email_id">sameer@ambica.ltd</string>
+    <string name="btn_send_email">Send Email</string>
+    <string name="hint_manage_map">Drag and adjust marker to save exact location</string>
+    <string name="text_add_address">Add Your Address</string>
+
+
+    <!--********** Strings for Update Profile screen **********-->
+    <string name="text_profile_first_name">First Name</string>
+    <string name="text_profile_last_name">Last Name</string>
+    <string name="text_profile_email">Email</string>
+    <string name="text_profile_contact">Mobile Number</string>
+    <string name="text_profile_birth_date">Birth Date</string>
+
+    <!--********** Strings for Order Summary screen **********-->
+    <string name="text_cart_total">Cart Total</string>
+    <string name="text_tax">Tax</string>
+    <string name="text_delivery">Delivery Charges</string>
+    <string name="text_promo_discount">Promo Discount</string>
+    <string name="text_sub_total">Sub Total</string>
+    <string name="text_from_address">From - </string>
+    <string name="text_to_address">To - </string>
+    <string name="text_items_total">Items Total </string>
+    <string name="text_promo_code">Enter Promo Code </string>
+    <string name="btn_apply_promo_code">Apply </string>
+    <string name="btn_add">Add + </string>
+    <string name="btn_proceed_checkout">Proceed To Checkout </string>
+
+    <!--********** Strings for Login and Sign Up **********-->
+    <string name="text_enter_number">Enter Your Phone number</string>
+    <string name="text_enter_number_details">We will send a code to your number.Standard data charges may apply.</string>
+    <string name="hint_enter_number">Enter Phone number</string>
+    <string name="text_send_code">Send Verification Code</string>
+    <string name="text_number_not_registered">Your number is not registered.Please Sign Up!</string>
+    <string name="btn_text_sign_up">Sign Up</string>
+    <string name="text_password">Password</string>
+
+    <!--********** Strings for Code Verification **********-->
+    <string name="text_enter_code">Enter Verification Code</string>
+    <string name="text_enter_otp">Enter OTP</string>
+    <string name="btn_verify_otp">Verify OTP</string>
+    <string name="text_resend_code"><u>Don\'t get the code? Tap here to resend.</u></string>
+    <string name="text_no_orders">No Order History!</string>
+    <string name="text_change_to">Change</string>
+    <string name="text_payment_option">Select Payment Option - </string>
+    <string name="text_payment_cash">Cash on delivery</string>
+    <string name="text_pay_online">Pay Online</string>
+    <string name="btn_complete_order">Complete Order</string>
+
+
+    <!--********** Strings for Order Placed **********-->
+    <string name="text_order_placed">Your food order has been placed</string>
+    <string name="text_check_with_restaurant">We will check with restaurant for order,till
+    then sit back and check your order status.</string>
+
+    <!--********** Strings for Order Status **********-->
+    <string name="btn_view_order_status">View Order Status</string>
+    <string name="text_your_order_status">Your Order Status</string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="check_order_place">Order Placed</string>
+    <string name="check_order_confirmed">Order Confirmed</string>
+    <string name="check_preparing_food">Preparing Food</string>
+    <string name="check_food_ready">Food is ready</string>
+    <string name="check_food_on_way">Food on the way</string>
+    <string name="check_delivered">Delivered</string>
+
+
+</resources>

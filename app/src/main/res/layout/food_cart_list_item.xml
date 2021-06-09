@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_food_cart_add_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_shape_vertical_rectangle"
+            android:gravity="center_horizontal"
+            android:padding="6dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_add_food_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="+"
+                android:textSize="@dimen/text_medium" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_food_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="1"
+                android:textSize="@dimen/text_medium" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_food_cart_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="-"
+                android:textSize="@dimen/text_medium" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_food_cart_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toEndOf="@+id/rl_food_cart_add_remove" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_food_cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/iv_food_cart_image"
+            android:text="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_food_cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_food_cart_name"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/iv_food_cart_image"
+            android:text="text"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_food_cart_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_food_cart_close_24" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

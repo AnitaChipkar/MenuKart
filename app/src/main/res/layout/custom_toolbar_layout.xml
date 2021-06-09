@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar_explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:drawableStart="@drawable/ic_current_location_on_24"
+            android:drawablePadding="4dp"
+            android:layout_gravity="start"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_food_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="start"
+            android:text="@string/food_message"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xx_large" />
+
+
+        <!-- <RelativeLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="4dp"
+             android:layout_marginBottom="8dp"
+             android:layout_weight="0.5"
+             android:gravity="end">
+
+             <androidx.appcompat.widget.AppCompatTextView
+                 android:id="@+id/tv_current_location"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:text="@string/current_location"
+                 android:textColor="@android:color/white"
+                 android:textSize="@dimen/text_medium" />
+
+             <androidx.appcompat.widget.AppCompatTextView
+                 android:id="@+id/tv_location_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/tv_current_location"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="4dp"
+                 android:text="@string/location_name"
+                 android:textColor="@android:color/white"
+                 android:textSize="@dimen/text_large" />
+         </RelativeLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:gravity="start" />
+    </LinearLayout>
+
+</LinearLayout>
